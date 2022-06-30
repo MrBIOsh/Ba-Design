@@ -14,6 +14,8 @@ window.addEventListener("scroll", function() {
     ).style.transform = `translateY(${(-offsetPosition/10) * .5}%)`;
   });
 
+  //Input
+
   document.querySelectorAll('.input__box').forEach(function(input) {
     input.querySelector('.form__input').addEventListener("focus", function() {
       input.querySelector('.form__span').style.display = "none";
@@ -24,6 +26,8 @@ window.addEventListener("scroll", function() {
       } else input.querySelector('.form__span').style.display = "block";
     })
   })
+
+  //Type_Writer
 
   const tl = new TimelineMax({repeat: -1, repeatDelay: 1});
 

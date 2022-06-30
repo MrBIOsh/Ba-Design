@@ -12,6 +12,15 @@
     font-style: normal;
 }
 
+@-webkit-keyframes textCursor {
+    from {
+        border-right-color: #5B4D47;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
 @keyframes textCursor {
     from {
         border-right-color: #5B4D47;
@@ -123,7 +132,8 @@ h1, p {
     white-space: nowrap;
     border-right: 2px solid #000;
     line-height: 1.15;
-    animation: textCursor 500ms steps(40) infinite normal;
+    -webkit-animation: textCursor 500ms steps(40) infinite normal;
+            animation: textCursor 500ms steps(40) infinite normal;
 }
 
 .form__size {
